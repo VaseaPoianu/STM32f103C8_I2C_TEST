@@ -96,7 +96,7 @@ int main(void)
 
   I2C_Lcd_Init(LCD_ADDR);
   I2C_Lcd_ClearDisplay(LCD_ADDR);
-  I2C_Lcd_PrintString(LCD_ADDR,"STM32 version ");
+  I2C_Lcd_PrintString(LCD_ADDR,"STM32 Version ");
   I2C_Lcd_SetCursor(LCD_ADDR, 0, 1);
   I2C_Lcd_PrintNumber(LCD_ADDR, 245, DEC);
 

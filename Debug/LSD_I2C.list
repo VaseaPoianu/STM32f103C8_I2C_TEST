@@ -39,11 +39,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_line   0000887a  00000000  00000000  0003f0ce  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0007e839  00000000  00000000  00047948  2**0
+ 18 .debug_str    0007e875  00000000  00000000  00047948  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000c6181  2**0
+ 19 .comment      00000053  00000000  00000000  000c61bd  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00001b68  00000000  00000000  000c61d4  2**2
+ 20 .debug_frame  00001b68  00000000  00000000  000c6210  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -470,7 +470,7 @@ int main(void)
   I2C_Lcd_ClearDisplay(LCD_ADDR);
  8000386:	204e      	movs	r0, #78	; 0x4e
  8000388:	f7ff ff67 	bl	800025a <I2C_Lcd_ClearDisplay>
-  I2C_Lcd_PrintString(LCD_ADDR,"STM32 version ");
+  I2C_Lcd_PrintString(LCD_ADDR,"STM32 Version ");
  800038c:	490b      	ldr	r1, [pc, #44]	; (80003bc <main+0x50>)
  800038e:	204e      	movs	r0, #78	; 0x4e
  8000390:	f7ff ff91 	bl	80002b6 <I2C_Lcd_PrintString>

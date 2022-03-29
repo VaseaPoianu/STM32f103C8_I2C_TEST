@@ -64,8 +64,8 @@ all: main-build
 main-build: LSD_I2C.elf secondary-outputs
 
 # Tool invocations
-LSD_I2C.elf: $(OBJS) $(USER_OBJS) C:\Users\Vostro\Downloads\LSD_I2C\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LSD_I2C.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Vostro\Downloads\LSD_I2C\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LSD_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+LSD_I2C.elf: $(OBJS) $(USER_OBJS) C:\Users\Vostro\Documents\GitHub\STM32f103C8_I2C_TEST\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "LSD_I2C.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Vostro\Documents\GitHub\STM32f103C8_I2C_TEST\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LSD_I2C.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
