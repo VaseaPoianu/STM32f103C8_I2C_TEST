@@ -1,0 +1,10 @@
+I2C_LCD1602.c:3:9:I2C_Lcd_Command	32	static
+I2C_LCD1602.c:27:6:I2C_Lcd_SendCmd	16	static
+I2C_LCD1602.c:32:6:I2C_Lcd_SendData	16	static
+I2C_LCD1602.c:38:6:I2C_Lcd_Init	16	static
+I2C_LCD1602.c:51:6:I2C_Lcd_ClearDisplay	16	static
+I2C_LCD1602.c:66:6:I2C_Lcd_SetCursor	16	static
+I2C_LCD1602.c:72:6:I2C_Lcd_PrintChar	16	static
+I2C_LCD1602.c:77:6:I2C_Lcd_PrintString	16	static
+I2C_LCD1602.c:86:6:I2C_Lcd_PrintNumber	56	static
+I2C_LCD1602.c:104:6:I2C_Lcd_PrintFloat	56	static
